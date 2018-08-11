@@ -2,7 +2,7 @@
 
 # Install a JupyterLab extension for demonstration purposes
 # jupyter labextension install @jupyterlab/geojson-extension@0.16.0 jupyterlab-drawio
-jupyter labextension install @jupyterlab/jupyterlab-drawio
+jupyter labextension install jupyterlab-drawio
 
 # Install from Source
 git clone https://github.com/jupyterlab/jupyter-renderers.git
