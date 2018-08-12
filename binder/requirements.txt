@@ -3,4 +3,4 @@ ipython
 pandas
 vdom
 jupyterlab==0.33.8
-jupyterlab_launcher
+jupyterlab_launcher==0.13.1
