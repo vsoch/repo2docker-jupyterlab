@@ -136,7 +136,7 @@ repo2docker: &repo2docker
         echo "0. Installing dependencies..."
         python3 -m venv venv
         . venv/bin/activate
-        pip install jupyter-repo2docker
+        pip install jupyter-repo2docker==0.5.0
         export VERSION=$(python3 -c "import repo2docker; print(repo2docker.__version__)")
         echo "repo2docker version: ${VERSION}"
         echo "1. Preparing building environment"
