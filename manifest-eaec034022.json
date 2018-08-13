@@ -4,7 +4,9 @@
         "RepoTags": [
             "vanessa/repo2docker-jupyterlab:eaec034022"
         ],
-        "RepoDigests": [],
+        "RepoDigests": [
+            "vanessa/repo2docker-jupyterlab@sha256:f407efd281a8e272d7fd934add33779a061efcffbf1e5e807461c3d424d1e766"
+        ],
         "Parent": "",
         "Comment": "",
         "Created": "2018-08-13T09:33:53.857876907Z",
