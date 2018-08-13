@@ -2,13 +2,3 @@
 
 # Install a JupyterLab extension for demonstration purposes
 jupyter labextension install @jupyterlab/geojson-extension@0.16.0
-echo "node version:"
-node --version
-echo "npm version:"
-npm --version
-which node
-echo "Webpack Information:"
-which webpack
-npm install -g webpack
-which webpack
-webpack --version

@@ -8,6 +8,9 @@ This is a continuous build template based on the [jupyterlab](https://github.com
 
 The build->test->deploy setup will have integration for a [containershare](https://vsoch.github.io/containershare) registry. In a nutshell, when you add the [configuration files](.circleci) here to your repository and connect to continuous integration, you will get a container, Github pages to serve metadata with complete manifest and inspection of your containers. It's a completely free, transparent, and open source way to practice reproducible science.  See [here for a demo of JupyterLab](https://github.com/jupyterlab/jupyterlab-demo).
 
+## Versions
+Note that we are currently using jupyterlab 0.0.32 and the geojson extension for version 0.16. Be warned that there is a [bad bug](https://github.com/jupyter/repo2docker/issues/374#issuecomment-412455324) that you might encounter if you stray from these values.
+
 ## Examples of URLs
 
 **Point to jupyterlab**
