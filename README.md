@@ -230,7 +230,7 @@ For a pre-built working example, try the following:
 
 ```bash
 docker pull vanessa/repo2docker-jupyterlab
-docker run -it --name repo2docker -p 8888:8888 vanessa/repo2docker-jupyterlab jupyter notebook --ip 0.0.0.0
+docker run -it --name repo2docker -p 8888:8888 vanessa/repo2docker-jupyterlab jupyter lab --ip 0.0.0.0
 ```
 
 You can then enter the url and token provided in the browser to access
@@ -241,5 +241,11 @@ container:
 docker stop repo2docker docker rm repo2docker
 ```
 
+or just don't name it, and have it be removed automatically:
+
+```bash
+docker run -it --rm -p 8888:8888 vanessa/repo2docker-jupyterlab jupyter lab --ip 0.0.0.0
+```
+
 ## Support
-If you want to get help please [post an issue!](https://www.github.com/vsoch/repo2docker-jupyterlab/issues)
+If you want to get help please [post an issue!](https://www.github.com/vsoch/repo2docker-jupyterlab/issues).
