@@ -1,0 +1,13 @@
+name: jupyterlab-environment
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pip:
+    - traitlets>=4.3.1
+    - ipython
+    - pandas
+    - vdom
+    - jupyterlab==0.32.0
+    - jupyterlab_launcher
