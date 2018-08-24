@@ -1,16 +1,16 @@
 [
     {
-        "Id": "sha256:07095b7a62f1110c4292f9e594c1fa6fbfed87a43850bd53906a8d94ffedce64",
+        "Id": "sha256:9de1935028f47cea935371f98f46b3ec04ccd2c8d7ba15ac8ed4736eb25447ba",
         "RepoTags": [
-            "vanessa/repo2docker-jupyterlab:7b1d63458d"
+            "vanessa/repo2docker-jupyterlab:ace3cd632e"
         ],
         "RepoDigests": [],
         "Parent": "",
         "Comment": "",
-        "Created": "2018-08-24T12:41:40.285379835Z",
-        "Container": "c0f5fc13a6723e51d993ea54cf0423a947aae95eef0cecf6e50f6fb9b3938973",
+        "Created": "2018-08-24T12:52:01.961532099Z",
+        "Container": "86e86ba6a09be22a31df61dc2f2e2318da7bae3c5a7ce46b1d29661ad842f360",
         "ContainerConfig": {
-            "Hostname": "c0f5fc13a672",
+            "Hostname": "86e86ba6a09b",
             "Domainname": "",
             "User": "joyvan",
             "AttachStdin": false,
@@ -38,7 +38,7 @@
                 "/bin/bash"
             ],
             "ArgsEscaped": true,
-            "Image": "vanessa/repo2docker-jupyterlab:7b1d63458d",
+            "Image": "vanessa/repo2docker-jupyterlab:ace3cd632e",
             "Volumes": null,
             "WorkingDir": "/home/joyvan",
             "Entrypoint": null,
@@ -85,8 +85,8 @@
         },
         "Architecture": "amd64",
         "Os": "linux",
-        "Size": 1890732220,
-        "VirtualSize": 1890732220,
+        "Size": 2447588426,
+        "VirtualSize": 2447588426,
         "GraphDriver": {
             "Data": null,
             "Name": "aufs"
@@ -102,18 +102,18 @@
                 "sha256:406ddf3f981456345797332bd270c954e553aca544facf92e5355beb9c25711b",
                 "sha256:fad2cc1e78ec1b5255f808388e46fb976ddd789571cee0f666de1b48b71cbd6a",
                 "sha256:4ff60368cd8f409b581b2f75c8da26af0b56a375074e8130ecc3f82acdad5d52",
-                "sha256:aed9a4ce3a9d483dea15f180b0091665d8860be328bae61ef5f1096bb974c6e2",
-                "sha256:ed9012b951f01f4501b34c7099154351567b1a89efd6975ddd41efdcd5a87744",
-                "sha256:062146b6846d32fab78f3a05cb8f30b7a0c63b46ae89c32b8bf7b142407d0710",
-                "sha256:36142cff2782eac497ac53a1a4509742e5e68c7c4fb6dac339c83b57918999f8",
-                "sha256:b8df32cadc0b13a816d90f91b26602e807d8359a721e31029a19d8e933ec1f44",
-                "sha256:ba024ae294bda866b178efe0ce46428a0acf7a9251f3579b3b9235cc2670e293",
-                "sha256:ab2ce74aa585219707b8d9b59da5ee457d3fb1289247c7916a9c80995e6fb526",
-                "sha256:72a0446dc616f3822ba444c3a5717adeca57baad5b5884994cd3955c7ebc0603",
-                "sha256:82b1fc1e2b0bb426d16047d9447cc614d03054c22aa368fc4482ba13fc986f4e",
-                "sha256:b5c23ccdece203075be27f2041fab7ddd31ada251ed632437832a6dc78de7f97",
-                "sha256:7da6d5be97573e45afe8a2db8a3bb28744c1963a1f620bec0e6dbcdbf83fa474",
-                "sha256:c9844525686576922a15479598268706636d6eda2fb9a8ccf8e015ee060794b9"
+                "sha256:3127c7f3f76155c481add387158839d8219fb9528760a41250bce3e377969849",
+                "sha256:76512c572191734f0a47bd1908e8e7b38ed970e84c70f00cdaeb65e469d8c222",
+                "sha256:75a34479e088ab9582bbe78a47c009c082c936b7bd257f0c3669b5c1eaf7c7ae",
+                "sha256:019d454b536b6b995b7bbb5f53b56f6d4c41bb9ce1c061390aa2587a20d7c691",
+                "sha256:f2b7201b2a523bf7fe026c3a00557f3aaf03b966ed586ea25a1bb3420880589d",
+                "sha256:a76d5fb619fdd726cca7341bded9b2da9d1fade4568dda6060d01f1da0ab2e4b",
+                "sha256:f7f62ea9214aa033de7c639e4b825080a5790f4f1311b13a218d79c61ccac291",
+                "sha256:5430d1af5ec38dbdbd1c65495903189fd12932176760cc88254672d783cc800c",
+                "sha256:2fd7c44b9138d20a089a6614b3cc5cdb9ef9526fb67765ea017e5f5b05b1794e",
+                "sha256:246262ccc2339c70ec4472946c6f5044df48b4070f790748ac0fda048bd456de",
+                "sha256:2119fd7d1c118c3d1de68f872bc0c8ebada6ad3c901544a3718dd6c4178fab70",
+                "sha256:5219065299b0b8707310d4c3ac0039df2851219a4e8f82dc5aacd0a5adb779d6"
             ]
         },
         "Metadata": {
