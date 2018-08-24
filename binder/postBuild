@@ -1,4 +1,5 @@
 #!/bin/bash
 
+npm install --save-dev webpack
 jupyter lab build
 jupyter labextension install @jupyterlab/geojson-extension@0.16.0
