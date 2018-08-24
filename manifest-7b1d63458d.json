@@ -1,0 +1,125 @@
+[
+    {
+        "Id": "sha256:07095b7a62f1110c4292f9e594c1fa6fbfed87a43850bd53906a8d94ffedce64",
+        "RepoTags": [
+            "vanessa/repo2docker-jupyterlab:7b1d63458d"
+        ],
+        "RepoDigests": [
+            "vanessa/repo2docker-jupyterlab@sha256:30d0019517145b015cdabe6ec04954dba262fcddc0b3cc3e4b878a92c263674e"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2018-08-24T12:41:40.285379835Z",
+        "Container": "c0f5fc13a6723e51d993ea54cf0423a947aae95eef0cecf6e50f6fb9b3938973",
+        "ContainerConfig": {
+            "Hostname": "c0f5fc13a672",
+            "Domainname": "",
+            "User": "joyvan",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8888/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/srv/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US.UTF-8",
+                "SHELL=/bin/bash",
+                "USER=joyvan",
+                "HOME=/home/joyvan",
+                "APP_BASE=/srv",
+                "CONDA_DIR=/srv/conda",
+                "NB_PYTHON_PREFIX=/srv/conda"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "ArgsEscaped": true,
+            "Image": "vanessa/repo2docker-jupyterlab:7b1d63458d",
+            "Volumes": null,
+            "WorkingDir": "/home/joyvan",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "DockerVersion": "17.09.0-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "joyvan",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/srv/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US.UTF-8",
+                "SHELL=/bin/bash",
+                "USER=joyvan",
+                "HOME=/home/joyvan",
+                "APP_BASE=/srv",
+                "CONDA_DIR=/srv/conda",
+                "NB_PYTHON_PREFIX=/srv/conda"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/home/joyvan",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1890732220,
+        "VirtualSize": 1890732220,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:f1b91f8d903cf1125f78407b85f7513a427bfc69d851fff778461e53cc58acce",
+                "sha256:d5ce7f24606728e4b34df8c844ca1fad74d24fcc11c3e4a3b38d117077ed6807",
+                "sha256:5251addbe073e88088288790f450f853171ac333296b6049f694270f7544fc2f",
+                "sha256:41f50d293d3afbe39e131f402644cc586952d5075d0252776194e4b82a6411a4",
+                "sha256:b3c5147f2ed120fe124b06bb4dbb713605431d2f54b33438d08a592d6dbdc704",
+                "sha256:406ddf3f981456345797332bd270c954e553aca544facf92e5355beb9c25711b",
+                "sha256:fad2cc1e78ec1b5255f808388e46fb976ddd789571cee0f666de1b48b71cbd6a",
+                "sha256:4ff60368cd8f409b581b2f75c8da26af0b56a375074e8130ecc3f82acdad5d52",
+                "sha256:aed9a4ce3a9d483dea15f180b0091665d8860be328bae61ef5f1096bb974c6e2",
+                "sha256:ed9012b951f01f4501b34c7099154351567b1a89efd6975ddd41efdcd5a87744",
+                "sha256:062146b6846d32fab78f3a05cb8f30b7a0c63b46ae89c32b8bf7b142407d0710",
+                "sha256:36142cff2782eac497ac53a1a4509742e5e68c7c4fb6dac339c83b57918999f8",
+                "sha256:b8df32cadc0b13a816d90f91b26602e807d8359a721e31029a19d8e933ec1f44",
+                "sha256:ba024ae294bda866b178efe0ce46428a0acf7a9251f3579b3b9235cc2670e293",
+                "sha256:ab2ce74aa585219707b8d9b59da5ee457d3fb1289247c7916a9c80995e6fb526",
+                "sha256:72a0446dc616f3822ba444c3a5717adeca57baad5b5884994cd3955c7ebc0603",
+                "sha256:82b1fc1e2b0bb426d16047d9447cc614d03054c22aa368fc4482ba13fc986f4e",
+                "sha256:b5c23ccdece203075be27f2041fab7ddd31ada251ed632437832a6dc78de7f97",
+                "sha256:7da6d5be97573e45afe8a2db8a3bb28744c1963a1f620bec0e6dbcdbf83fa474",
+                "sha256:c9844525686576922a15479598268706636d6eda2fb9a8ccf8e015ee060794b9"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
