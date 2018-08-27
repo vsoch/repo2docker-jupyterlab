@@ -9,5 +9,4 @@ dependencies:
     - ipython
     - pandas
     - vdom
-    - jupyterlab==0.32.0
-    - jupyterlab_launcher
+    - jupyterlab>=0.34
