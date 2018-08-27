@@ -10,3 +10,4 @@ dependencies:
     - pandas
     - vdom
     - jupyterlab>=0.34
+    - nodejs
