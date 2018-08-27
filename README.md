@@ -1,5 +1,19 @@
 # repo2docker JupyterLab
 
+> too long, didn't read... here is the example!
+
+```bash
+docker run -it --name repo2docker -p 8888:8888 vanessa/repo2docker-jupyterlab jupyter lab --ip 0.0.0.0
+```
+
+![img/jupyterlab.png](img/jupyterlab.png)
+
+Now build your own, with your own code to share, a la `containershare`! Thanks to the 
+[project jupyter team](https://github.com/jupyter/repo2docker) and [@blink1073](https://github.com/blink1073)
+for the team effort on this container.
+
+## Getting Started
+
 This is a continuous build template based on the [jupyterlab](https://github.com/binder-examples/jupyterlab) binder example, meaning that it shows how you can install Python dependencies in a jupyterlab notebook to a container deployed automatically with Docker Hub. For repo2docker, we detect files automatically by default given presence of the [binder](binder) directory. The url is accessed by appending
 `?urlpath=lab` to the jupyter lab notebook. That's it! Within the binder folder:
 
@@ -69,12 +83,12 @@ user (step 4) your container
 
 ### Step 1. Clone the Repository
 
-First, fork the [repo2docker-julia](https://www.github.com/vsoch/repo2docker-julia/)
+First, fork the [repo2docker-jupyterlab](https://www.github.com/vsoch/repo2docker-jupyterlab/)
 Github repository to your account, and clone the branch.
 
 ```bash
-git clone https://www.github.com/<username>/repo2docker-julia
-git clone git@github.com:<username>/repo2docker-julia.git
+git clone https://www.github.com/<username>/repo2docker-jupyterlab
+git clone git@github.com:<username>/repo2docker-jupyterlab.git
 ```
 
 ### Step 2. Configuration
@@ -103,49 +117,7 @@ Choose an organization and name that you like (in the traditional format
 `<ORG>/<NAME>`), and remember it! We will be adding it, along with your
 Docker credentials, to be encrypted.
 
-
-### Step 4. Github Machine User
-
-If you want to deploy the manifests back to Github pages, the easiest option (and
-one that doesn't put your entire Github account under risk) is to create a machine
-user. This comes down to creating a second Github user account (with a different email)
-and then giving the account permission to the repository, and generate an ssh key for it.
-You won't need to worry about how the deploy is done - this is handled in the circleCI
-recipe included with the template. Here are instructions for setting up credentials, derived
-from [this great resource](https://github.com/DevProgress/onboarding/wiki/Using-Circle-CI-with-Github-Pages-for-Continuous-Delivery).
-
-**Why do I need to do this?**
-
-Pushing content back to Github pages requires a deploy key. Although Circle will generate a deploy key for you, it only has read access. We need to generate a machine user with write access. Read more about machine user keys [keys](https://circleci.com/docs/github-security-ssh-keys/#machine-user-keys)
-
-**Instructions**
-
- 1. Open a second browser so you can stay logged into your main Github account in one browser, and [create a new Github account](https://github.com/join) there. You will basically need another email address, and a creative username.
- 2. In your main Github account (the primary browser) add this user as a collaborator to your repository. They will need push access.
- 3. Accept the invitation in the second browser, or the emali sent to you.
- 4. In the second browser, again log in to [Circle CI](https://circleci.com/) with your new Github account. Make sure you log in via your Github machine user account, and that you have accepted the invitation.
- 5.  Click on "Add Projects", and select your regular Github username under "Choose Organization". This is the owner of the project.  Then click "Follow Project" next to the repository name on the left of the menu.
- 6. This is important! Once followed, go to the Project Settings -> "Checkout SSH keys", and click on the button to "Authorize with GitHub." You will be taken back to Github, signed in as the machine user, and you should click "Authorize Application." Finally, click the Create and add machine user github name key button on the same page.
-
-**Generate Key**
-Follow the instructions [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key) to generate a new ssh key. The steps to add it to your project are a little weird, but I'll try to be specific:
-
- - your machine user must first be added as a collaborator to the project
- - you must then log in to CircleCI with your **machine user** and click on Jobs to see the project
- - when you see it, click on any of the steps and click on "Follow Project" in the upper right
- - Under the project settings (gear icon in the upper right) under "Permissions" click on "Checkout SSH keys" and then click the button to "Add user key." If you don't do this, it will give you an error that the key is read only.
-
-The final step is to edit the [.circleci/config.yml](.circleci/config.yml) file to add your ssh key for circle to find. See the section that looks like this?
-
-```yaml
-- add_ssh_keys:
-    fingerprints:
-      - "d4:37:a4:3b:1e:ea:eb:6a:b7:e3:0a:52:e2:8c:ac:d0"
-```
-
-Replace this value with the fingerprint from your machine user.
-
-### Step 5. Connect to CircleCI
+### Step 4. Connect to CircleCI
 
 If you do not already have a Circle CI account, head [here](https://circleci.com/signup/) and create one, and
 add your project to your Circle CI account.  Here are [instructions](https://circleci.com/docs/getting-started/) if you've never done this before.
@@ -185,10 +157,35 @@ should have defined in your CircleCI settings.
 
 ![https://github.com/vsoch/repo2docker-share/raw/master/img/envars.png](https://github.com/vsoch/repo2docker-share/raw/master/img/envars.png)
 
+### Step 5. Github Machine User
+
+If you want to deploy the manifests back to Github pages, the easiest option (and
+one that doesn't put your entire Github account under risk) is to create a machine
+user. This comes down to creating a second Github user account (with a different email)
+and then giving the account permission to the repository, and generate an ssh key for it.
+You won't need to worry about how the deploy is done - this is handled in the circleCI
+recipe included with the template. Here are instructions for setting up credentials, derived
+from [this great resource](https://github.com/DevProgress/onboarding/wiki/Using-Circle-CI-with-Github-Pages-for-Continuous-Delivery).
+
+**Why do I need to do this?**
+
+Pushing content back to Github pages requires a deploy key. Although Circle will generate a deploy key for you, it only has read access. We need to generate a machine user with write access. Read more about machine user keys [keys](https://circleci.com/docs/github-security-ssh-keys/#machine-user-keys)
+
+**Instructions**
+If you haven't done this before, you can follow the instructions [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key) to generate a new ssh key. The steps to add it to your project are a little weird, but I'll try to be specific:
+
+ 1. Open a second browser so you can stay logged into your main Github account in one browser, and [create a new Github account](https://github.com/join) there. You will basically need another email address, and a creative username.
+ 2. In your main Github account (the primary browser) add this user as a collaborator to your repository. They will need push access.
+ 3. Accept the invitation in the second browser, or the emali sent to you.
+ 4. In the second browser, again log in to [Circle CI](https://circleci.com/) with your new Github account. Make sure you log in via your Github machine user account, and that you have accepted the invitation.
+ 5.  Click on "Add Projects", and select your regular Github username under "Choose Organization". This is the owner of the project.  Then click "Follow Project" next to the repository name on the left of the menu. If you don't see the project there, copy paste the link to it directly.
+ 6. This is important! Once followed, go to the Project Settings -> "Checkout SSH keys", and click on the button to "Authorize with GitHub." You will be taken back to Github, signed in as the machine user, and you should click "Authorize Application." Finally, click the Create and add machine user github name key button on the same page.
+
 ### Step 6. Push and Deploy!
 
 Once the environment variables are set up, you can push or issue a pull
-request to see circle build the workflow. Remember that you only need
+request to see circle build the workflow. Don't forget that you will need to change the default
+in settings to also build pull requests. Remember that you only need
 the `.circleci/config.yml`, `.circleci/template.html` and not any other files in the repository. If
 your notebook is hosted in the same repo, you might want to add these,
 along with your requirements.txt, etc.
@@ -216,6 +213,7 @@ you can change this default in the settings. You can easily add filters
 (or other criteria and actions) to be performed during or after the
 build by editing the `.circleci/config.yml` file in your repository.
 
+
 **How do I use my container?**
 
 For a repo2docker container, you should expect a jupyter notebook. Here is
@@ -225,20 +223,19 @@ an example of how to pull and run this container:
 docker pull <ORG>/<NAME>:<TAG>
 docker run -it --name repo2docker -p 8888:8888 <ORG>/<NAME>:<TAG> jupyter notebook --ip 0.0.0.0
 ```
-
-For a pre-built working example, try the following:
+For a pre-built working example, try the following to run jupyterlab:
 
 ```bash
 docker pull vanessa/repo2docker-jupyterlab
 docker run -it --name repo2docker -p 8888:8888 vanessa/repo2docker-jupyterlab jupyter lab --ip 0.0.0.0
 ```
-
 You can then enter the url and token provided in the browser to access
 your notebook. When you are done and need to stop and remove the
 container:
 
 ```bash
-docker stop repo2docker docker rm repo2docker
+docker stop repo2docker 
+docker rm repo2docker
 ```
 
 or just don't name it, and have it be removed automatically:
